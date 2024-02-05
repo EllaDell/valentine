@@ -1,0 +1,82 @@
+html {    
+    background: url('slike/pink.jpg') no-repeat center fixed;     
+    background-size: cover;
+}
+
+body{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#prvi{
+    margin-right:20px;
+    width: 100px;
+    color:aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fb57b6;
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+    transition: background-color 0.3s;
+}
+
+#drugi{
+    margin-right:20px;
+    width: 100px;
+    position:absolute;
+    color:aqua;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fb57b6;
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+    transition: background-color 0.3s;
+}
+
+#prvi:hover{
+    background-color: #ff0077;
+}
+
+#drugi:hover{
+    background-color: #ff0077;
+    position:absolute;
+}
+
+.dugmici{
+    text-align: center;
+    margin:auto;
+}
+
+h1{
+    font-family: 'Honk', system-ui;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+@keyframes slide {
+    0% { transform:  translateY(120px);}
+    50% {transform: translateZ(-60px);}
+    100% { transform: translateX(120px);}   
+}
+
+.srce {
+    width: 150px;
+    height: auto;
+    animation: slide 3s infinite;
+}
+
+@keyframes mymove{
+    0% { transform:  translateX(120px);}
+    50% {transform: translateZ(-60px);}
+    100% { transform: translateY(120px);}
+}
+
+.srce2{
+    width: 150px;
+    height: auto;
+    animation: mymove 3s infinite;
+}

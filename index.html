@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentinovo</title>
+    <link rel="stylesheet" href="stil.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+    </style>
+    <script>
+        function clicky() {
+            alert("Nego šta ćeš janje moje heeee");
+        }
+        function clicky2(){
+            var button = document.getElementById('drugi');
+            var newTop = Math.floor(Math.random() * window.innerHeight);
+            var newLeft = Math.floor(Math.random() * window.innerWidth);
+            button.style.top = newTop + 'px';
+            button.style.left = newLeft + 'px';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Will you be my Valentine?</h1>
+    <img class="srce" src="slike/srce.webp">
+
+    <img class="srce2" src="slike/malosrce.png">
+
+
+<div class="dugmici">
+    <button id="prvi" onclick="clicky()">YES</button>
+    <button id="drugi" onclick="clicky2()">NO</button>
+</div>
+    
+</body>
+</html>
